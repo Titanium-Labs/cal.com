@@ -3,8 +3,8 @@ services:
     name: calcom-api
     env: node
     plan: free
-    buildCommand: cd apps/api && npm install --legacy-peer-deps && npm run build
-    startCommand: cd apps/api && npm run start
+    buildCommand: npm install --legacy-peer-deps && npm run build --workspace=@calcom/api-proxy
+    startCommand: npm run start --workspace=@calcom/api-proxy
     envVars:
       - key: DATABASE_URL
         sync: false
