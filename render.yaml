@@ -11,6 +11,3 @@ services:
       - key: NODE_ENV
         value: production
 
-  - type: postgres
-    name: calcom-db
-    plan: free 
