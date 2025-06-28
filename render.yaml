@@ -7,9 +7,7 @@ services:
     startCommand: cd apps/api && npm run start
     envVars:
       - key: DATABASE_URL
-        fromDatabase:
-          name: calcom-db
-          property: connectionString
+        sync: false
       - key: NODE_ENV
         value: production
 
