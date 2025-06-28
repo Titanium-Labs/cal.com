@@ -1,0 +1,13 @@
+{
+  "name": "calcom-api-key-generator",
+  "version": "1.0.0",
+  "description": "Generate API keys for Cal.com",
+  "main": "create-api-key.js",
+  "dependencies": {
+    "@prisma/client": "*",
+    "uuid": "^8.3.2"
+  },
+  "scripts": {
+    "generate-key": "node create-api-key.js"
+  }
+} 
