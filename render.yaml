@@ -3,7 +3,7 @@ services:
     name: calcom-api
     env: node
     plan: free
-    buildCommand: cd apps/api && npm install && npm run build
+    buildCommand: cd apps/api && npm install --legacy-peer-deps && npm run build
     startCommand: cd apps/api && npm run start
     envVars:
       - key: DATABASE_URL
