@@ -3,7 +3,7 @@ services:
     name: calcom-api
     env: node
     plan: free
-    buildCommand: yarn install
+    buildCommand: yarn install --frozen-lockfile
     startCommand: yarn workspace @calcom/api-proxy dev
     envVars:
       - key: DATABASE_URL
