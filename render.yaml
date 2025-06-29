@@ -3,7 +3,7 @@ services:
     name: calcom-api
     env: node
     plan: free
-    buildCommand: yarn install --check-files
+    buildCommand: yarn install
     startCommand: yarn workspace @calcom/api-proxy dev
     envVars:
       - key: DATABASE_URL
